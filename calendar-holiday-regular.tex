@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+
+\usepackage{lipsum} % <- For dummy text
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\textwidth}{500pt}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+ 
+\usepackage{multicol}
+\setlength{\columnsep}{1.0cm}
+\setlength{\columnseprule}{1.0pt} 
+
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Date:}
+%\rfoot{Page \thepage}
+
+ \usepackage{relsize}%
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{1}
+\setlist[todolist]{label=\huge $\square$} 
+ 
+ 
+ \newcommand{\rpm}{\raisebox{.2ex}{$\scriptstyle\pm$}}
+ 
+\begin{document}
+\begin{multicols}{2}
+
+\section*{\underline{Schedule}} 
+Times move $\rpm$45 min if training and sleep at 22. 
+  \begin{todolist}[itemsep=8pt]
+    \item 6.00: Get up, morning routine
+	\item 6.30: Daily planning while eating   
+    \item 6.45: Training (optional)
+    \item 7.15: Shower
+    \item
+    \item 
+    \item 
+    \item     
+    \item 18.00: Dinner
+    \item 21.30: Prep for bed
+  \end{todolist}
+
+\begin{flushleft}
+\rule{122pt}{1pt}\vline\rule{122pt}{1pt}
+\end{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\underline{To-Do}}
+  \begin{todolist}[itemsep=8pt]
+    \item 
+    \item 
+    \item 
+    \item 
+    \item 
+  \end{todolist}
+
+\columnbreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\underline{Goals}}
+Set minimum 2-3 each day.
+  \begin{todolist}[itemsep=8pt]
+    \item 
+    \item 
+    \item 
+    \item 
+    \item 
+  \end{todolist}
+
+\begin{flushleft}
+\rule{125pt}{1pt}\vline\rule{125pt}{1pt}
+\end{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\underline{Motivation}}
+\vfill\null
+\vfill\null
+\begin{flushleft}
+\rule{125pt}{1pt}\vline\rule{125pt}{1pt}
+\end{flushleft}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\underline{Happiness}}
+\vfill\null
+\smallskip
+\vfill\null
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{multicols}
+ 
+\end{document}
